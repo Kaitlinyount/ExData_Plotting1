@@ -1,6 +1,6 @@
 download.file("https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip", destfile="./powerdata.zip");
-unzip("./powerdata.zip",list=TRUE);
 unzip("./powerdata.zip");
+unzip("./powerdata.zip",list=TRUE);
 powerdata<-read.table("./household_power_consumption.txt",header = TRUE,sep=";");
 powerdata$Date<-as.character(powerdata$Date);
 powerdata$Time<-as.character(powerdata$Time);
